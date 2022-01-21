@@ -1,0 +1,491 @@
+/* FONTS  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* Common styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Nav Style */
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 6vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.logo {
+  width: 50vw;
+}
+.logo i {
+  display: none;
+}
+.logo h1 {
+  color: rgb(36, 98, 212);
+  font-size: 40px;
+  margin-left: 17%;
+}
+.menu {
+  width: 50vw;
+}
+.menu ul {
+  display: flex;
+  margin-left: 20%;
+}
+.menu ul li {
+  margin-left: 2em;
+  list-style-type: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  transition: color 0.5s linear;
+}
+
+.menu ul li a:hover {
+  color: #235fcf;
+  text-decoration: underline;
+}
+
+/* Header  */
+header {
+  min-height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner-info {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 8%;
+  padding-right: 6%;
+}
+.banner-info h1 {
+  font-size: 52px;
+  font-weight: 700;
+}
+.banner-info p {
+  font-weight: 500;
+}
+.button {
+  text-decoration: none;
+  color: black;
+  background-color: #286ac09f;
+  padding: 10px;
+  width: 150px;
+  border-radius: 20px;
+  font-size: 1em;
+  transition: all 0.5s linear;
+}
+.banner-info a:hover {
+  color: #026149;
+  background-color: white;
+}
+
+.banner-img {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+.banner-img img {
+  width: 500px;
+  height: 450px;
+  background-image: url(images/Circle\ design.svg);
+  background-position: 0 0px;
+  background-repeat: no-repeat;
+  border-radius: 6%;
+  background-size: 400px;
+  margin-left: 20%;
+}
+.banner-img img:hover {
+  transform: scale(1.5) rotate(-10deg);
+  transition: transform 1s ease-in-out;
+}
+
+/* Companies  */
+.companies {
+  width: 100vw;
+  min-height: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vh;
+}
+.company {
+  width: 70vw;
+  min-height: 10vh;
+  border-top: 2px solid rgb(210, 210, 210);
+  border-bottom: 2px solid rgb(210, 210, 210);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Products  */
+.collections {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.collections-title {
+  font-size: 28px;
+  text-align: center;
+  margin: 5vh 0;
+}
+.collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 60vw;
+}
+.product {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  min-height: 500px;
+  padding: 5%;
+  cursor: pointer;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+.product h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.product .cost {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.product .rating {
+  color: orange;
+}
+.rating span {
+  color: black;
+}
+.product .detail {
+  margin-top: 5px;
+}
+
+.product img {
+  max-width: 300px;
+  height: 256px;
+}
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 1px -1px 20px 0px rgb(82 71 71 / 48%);
+}
+.collections a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #e02c6d;
+  font-size: 1.2em;
+  margin-left: 50%;
+  transition: all 0.2s linear;
+}
+.collections a:hover {
+  color: #2ce09b;
+  text-decoration: underline;
+}
+
+/* Extra part  */
+.about {
+  width: 100vw;
+  min-height: 70vh;
+  margin: 10vh 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-text {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 8%;
+  padding-right: 6%;
+}
+.about-text h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.about-text p {
+  font-weight: 600;
+}
+
+.about-text a:hover {
+  color: #0956af;
+  background-color: white;
+}
+
+.about-image {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.about-image img:hover {
+  transform: scale(1.2) rotate(-15deg);
+  transition: transform 1s ease-in-out;
+}
+
+.about-text h1 {
+  font-size: 60px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0a0826;
+  width: 100vw;
+  min-height: 20vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+footer .links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1vw;
+  font-size: 20px;
+  transition: all 0.5s linear;
+}
+.links a:hover {
+  color: #25e2b3;
+}
+
+/* Responsive part */
+/* Mobile Responsive */
+@media only screen and (max-width: 688px) {
+  nav {
+    margin-top: 5vh;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+  }
+  .logo h1 a {
+    font-size: 24px;
+    margin: auto;
+    float: right;
+  }
+
+  .logo i {
+    display: block;
+    font-size: 24px;
+    color: black;
+  }
+  .menu {
+    display: none;
+  }
+  header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .banner-img {
+    width: 100vw;
+    margin-bottom: 5vh;
+  }
+  .banner-img img {
+    width: 250px;
+    height: 250px;
+    background-size: 220px;
+    margin: auto;
+  }
+  .banner-info {
+    width: 100vw;
+    text-align: center;
+  }
+  .banner-info h1 {
+    font-size: 2em;
+  }
+  .banner-info a {
+    margin: auto;
+  }
+  .company {
+    width: 100vw;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    place-items: center;
+  }
+  .collections {
+    margin: 10px 0;
+  }
+  .collections a {
+    margin: auto;
+  }
+  .collection {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100vw;
+  }
+  .product {
+    margin: 10px auto;
+  }
+  .about {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  .about-text,
+  .about-image {
+    width: 100vw;
+  }
+  .about-text {
+    margin-bottom: 100px;
+  }
+  .about-text a {
+    margin: auto;
+  }
+  .about-text h1 {
+    font-size: 2.5em;
+  }
+  .about-image {
+    background-image: none;
+    width: 100vw;
+  }
+  .about-image img {
+    width: 90vw;
+    margin-left: 0;
+  }
+  footer {
+    width: 100vw;
+  }
+  footer h1,
+  footer p {
+    font-size: 1em;
+  }
+}
+
+/* Tablet Responsive */
+@media only screen and (max-width: 968px) and (min-width: 688px) {
+  nav {
+    margin-top: 5vh;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+  }
+  .logo h1 a {
+    font-size: 28px;
+    margin: auto;
+    float: right;
+  }
+
+  .logo i {
+    display: block;
+    font-size: 28px;
+    color: black;
+  }
+  .menu {
+    display: none;
+  }
+  header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .banner-img {
+    width: 100vw;
+    margin-bottom: 5vh;
+  }
+  .banner-img img {
+    width: 250px;
+    height: 250px;
+    background-size: 220px;
+    margin: auto;
+  }
+  .banner-info {
+    width: 100vw;
+    text-align: center;
+  }
+  .banner-info h1 {
+    font-size: 2em;
+  }
+  .banner-info a {
+    margin: auto;
+  }
+  .company {
+    width: 100vw;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 30px;
+    place-items: center;
+  }
+  .collections {
+    margin: 10px 0;
+  }
+  .collections a {
+    margin: 3vh auto;
+  }
+  .collection {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+  }
+  .product {
+    margin: 10px auto;
+  }
+  .about {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  .about-text,
+  .about-image {
+    width: 100vw;
+  }
+  .about-text {
+    margin-bottom: 100px;
+  }
+  .about-text a {
+    margin: auto;
+  }
+  .about-text h1 {
+    font-size: 2.5em;
+  }
+  .about-image {
+    background-image: none;
+  }
+  .about-image img {
+    width: 90vw;
+  }
+  footer {
+    width: 100vw;
+  }
+  footer h1,
+  footer p {
+    font-size: 1em;
+  }
+}
